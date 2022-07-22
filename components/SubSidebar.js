@@ -35,6 +35,7 @@ const SidebarContent = () => {
       h='full'
       px={6}
       py={10}
+      style={{ boxShadow: '10px 0 12px -8px #888' }}
     >
       <Select
         icon={<MdArrowDropDown />}

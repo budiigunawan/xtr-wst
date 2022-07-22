@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Sidebar from '../components/Sidebar';
 import SubSidebar from '../components/SubSidebar';
 import Navbar from '../components/Navbar';
+import Map from '../components/Map';
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <Box as='main'>
         <Sidebar>
           <SubSidebar>
-            <Navbar>Main Content Here</Navbar>
+            <Navbar>
+              <Map />
+            </Navbar>
           </SubSidebar>
         </Sidebar>
       </Box>

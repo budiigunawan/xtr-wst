@@ -10,22 +10,20 @@ import { AiFillInfoCircle } from 'react-icons/ai';
 
 const LinkItems = [
   { name: 'Browse', url: '/', icon: GiWorld },
-  { name: 'Suggest Attraction', url: '/trending', icon: FiTrendingUp },
-  { name: 'Videos', url: '/explore', icon: FiCompass },
-  { name: 'Blog', url: '/favourites', icon: FiStar },
-  { name: 'About', url: '/settings', icon: AiFillInfoCircle },
+  { name: 'Suggest Attraction', url: '#', icon: FiTrendingUp },
+  { name: 'Videos', url: '#', icon: FiCompass },
+  { name: 'Blog', url: '#', icon: FiStar },
+  { name: 'About', url: '#', icon: AiFillInfoCircle },
 ];
 
-export default function SimpleSidebar({ children }) {
+export default function Sidebar({ children }) {
   return (
     <Box minH='100vh' bg={useColorModeValue('gray.100', 'gray.900')}>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
       />
-      <Box ml={{ base: 0, md: 60 }} p='4'>
-        {children}
-      </Box>
+      <Box ml={{ base: 0, md: '149px' }}>{children}</Box>
     </Box>
   );
 }
@@ -63,6 +61,7 @@ const NavItem = ({ icon, url, isActive, children }) => {
         minH={'124px'}
         role='group'
         cursor='pointer'
+        borderBottom='1px solid #242832'
         bg={isActive && '#72cdd2'}
         color={isActive ? 'white' : '#8298A0'}
         _hover={{
@@ -87,7 +86,7 @@ const NavItem = ({ icon, url, isActive, children }) => {
             }}
             as={icon}
           />
-          <Text>{children}</Text>
+          <Text lineHeight={1}>{children}</Text>
         </Box>
       </Box>
     </Link>

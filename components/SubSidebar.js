@@ -1,9 +1,7 @@
 import React from 'react';
 import {
   Box,
-  Icon,
   useColorModeValue,
-  Text,
   Select,
   Accordion,
   AccordionItem,
@@ -32,7 +30,6 @@ const SidebarContent = () => {
     <Box
       bg={'#282C37'}
       borderRight='1px'
-      borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: '350px' }}
       pos='fixed'
       h='full'

@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 import Sidebar from '../components/Sidebar';
 import SubSidebar from '../components/SubSidebar';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       </Head>
       <Box as='main'>
         <Sidebar>
-          <SubSidebar>Tes</SubSidebar>
+          <SubSidebar>
+            <Navbar>Main Content Here</Navbar>
+          </SubSidebar>
         </Sidebar>
       </Box>
     </div>

@@ -43,7 +43,7 @@ const SidebarContent = () => {
         borderColor={'#242832'}
         borderRadius={0}
         // https://stackoverflow.com/questions/22681141/select-option-padding-not-working-in-chrome
-        // indent the text 15 px
+        // indent the text 20 px
         style={{ textIndent: '20px' }}
       >
         <option>Filter by favorite</option>
